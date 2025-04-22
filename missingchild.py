@@ -67,7 +67,7 @@ print(f"Parsed {len(parsed_data)} tweets with structured data.")
 # 3. Google Sheets Setup
 # -------------------------
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\projects\\POC\\creds.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("path_to_your_creds_file", scope)
 client_gs = gspread.authorize(creds)
 
 # Sheet config
