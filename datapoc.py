@@ -9,7 +9,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 # --------------------
 # 1. Twitter API Setup
 # --------------------
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAJid0gEAAAAA8Tggg%2BvenIZFKSzFbxaPdLfoncQ%3DBePozHYh4sprNsicV4rGsvFUSNp545hET4OSoNEKGTHUl68kTU'
+bearer_token = 'Your_Bearer_Token'
 client = tweepy.Client(bearer_token=bearer_token)
 
 # -------------------------
@@ -104,7 +104,7 @@ print(f"Parsed {len(parsed_data)} tweets with structured data.")
 # 4. Google Sheets Setup
 # -------------------------
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("C:\projects\POC\creds.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("PAth_to_your_creds_file", scope)
 client_gs = gspread.authorize(creds)
 
 # Sheet config
